@@ -1,7 +1,7 @@
 import TopNav from 'ui/topnav';
 import ChatRoom from 'ui/interaction/Chatroom/Chatroom'
-import Provanance from 'ui/interaction/Provanance/Provanance'
 import Notebook from 'ui/interaction/Notebook/Notebook';
+import CellProvanance from 'ui/interaction/CellProvanance/CellProvanance';
 import {
   ResizableHandle,
   ResizablePanel,
@@ -20,10 +20,10 @@ export default function App() {
           <Notebook />
         </div>
         <div className='w-2/5 h-full overflow-y-scroll space-y-2'>
-          <div className='flex flex-col  h-3/5'>
-            <Provanance />  
+          <div className='flex flex-col h-2/6'>
+            <CellProvanance />
           </div>
-          <div className='flex flex-col  h-2/5 '>
+          <div className='flex flex-col  h-4/6 '>
             <ChatRoom />
           </div>
 

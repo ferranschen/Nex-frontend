@@ -8,7 +8,8 @@ import {
   MessageUIUser,
 } from 'ui/interaction/Chatroom/MessageUI'
 import { useOnMountUnsafe } from 'lib/mount'
-
+import Planner from 'ui/interaction/Chatroom/Planner'
+import { Separator } from "@/components/ui/separator"
 
 export default function ChatRoom() {
   const chatRoomRef = useRef(null)
@@ -84,13 +85,15 @@ export default function ChatRoom() {
   }, [isLoading])
 
   return (
-    <div className="w-full h-full bg-white p-4 rounded-lg shadow-md overflow-y-scroll border">
-      <SectionTitle title="ChatRoom" />
+    <div className="w-full h-full bg-white p-4 rounded-lg shadow-sm overflow-y-scroll border">
+      <Planner />
+      <Separator className="my-6" />
+
       <div className="flex antialiased text-gray-800">
         <div className="flex-row h-full w-full ">
           <div className="flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-50 h-full p-4">
-            <div className='h-60 overflow-y-scroll'>
-              <div className="grid grid-cols-12 gap-y-2 ">
+            <div className='h-96 overflow-y-scroll'>
+              <div className="grid grid-cols-12 gap-y-2 min-h-full">
                 {chatHistory.map((chat) => {
                   if (chat.sender === 'You') {
                     return (
