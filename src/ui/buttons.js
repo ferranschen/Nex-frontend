@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Typography } from '@material-tailwind/react'
+import { Button } from "@/components/ui/button"
+
 export function AddFileButton({ onClick }) {
     return (
       <div>

@@ -2,6 +2,11 @@ import TopNav from 'ui/topnav';
 import ChatRoom from 'ui/interaction/Chatroom/Chatroom'
 import Provanance from 'ui/interaction/Provanance/Provanance'
 import Notebook from 'ui/interaction/Notebook/Notebook';
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
 
 
 

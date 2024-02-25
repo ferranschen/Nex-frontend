@@ -1,7 +1,6 @@
 import React from 'react'
 import 'reactflow/dist/base.css'
-import ReactFlowWrapper from 'ui/interaction/Provanance/ReactFlowWrapper'
-import {SectionTitle} from 'ui/titles'
+
 
 export default function Provanance() {
   return (
